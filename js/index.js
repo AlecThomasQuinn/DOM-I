@@ -114,3 +114,14 @@ const mainVisionBody = document.querySelector
 mainVisionBody.textContent = siteContent["main-content"]["vision-content"];
 
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Main Body Working ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+
+const contactAddress = document.querySelector('.contact p:nth-child(2)');
+const contactPhone = document.querySelector('.contact p:nth-child(3)');
+const contactEmail = document.querySelector('.contact p:nth-child(4)');
+
+contactAddress.textContent = siteContent["contact"]["address"];
+contactPhone.textContent = siteContent["contact"]["phone"];
+contactEmail.textContent = siteContent["contact"]["email"];
