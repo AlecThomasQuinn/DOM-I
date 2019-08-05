@@ -60,7 +60,7 @@ nav5.textContent =  siteContent["nav"]["nav-item-5"];
 const nav6 = document.querySelector('nav a:nth-child(6)');
 nav6.textContent =  siteContent["nav"]["nav-item-6"];
 
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Nav Working ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Nav  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 const ctaHeading = document.querySelector('.cta-text h1');
 ctaHeading.textContent = siteContent["cta"]["h1"];
@@ -71,7 +71,7 @@ ctaButton.textContent = siteContent["cta"]["button"];
 const ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CTA Working ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CTA ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 const mainFeaturesHeading = document.querySelector
 ('.main-content .top-content .text-content:nth-child(1) h4');
@@ -113,7 +113,7 @@ const mainVisionBody = document.querySelector
 ('.main-content .bottom-content .text-content:nth-child(3) p');
 mainVisionBody.textContent = siteContent["main-content"]["vision-content"];
 
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Main Body Working ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Main Body ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 const contactHeader = document.querySelector('.contact h4');
 contactHeader.textContent = siteContent["contact"]["contact-h4"];
@@ -125,3 +125,24 @@ const contactEmail = document.querySelector('.contact p:nth-child(4)');
 contactAddress.textContent = siteContent["contact"]["address"];
 contactPhone.textContent = siteContent["contact"]["phone"];
 contactEmail.textContent = siteContent["contact"]["email"];
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Contact info ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent["footer"]["copyright"];
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Footer ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+const fullNav = document.querySelector('nav');
+const appendA = document.createElement('A');
+appendA.textContent = "APPEND AAAAA";
+fullNav.appendChild(appendA);
+
+const prependA = document.createElement('A');
+prependA.textContent = "PREPEND AAAAA";
+fullNav.prepend(prependA)
+
+const navTextColor = document.querySelectorAll('nav a');
+navTextColor.forEach(navText => (navText.style.color = 'limegreen'));
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Append, Prepend, Green Nav Text ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
