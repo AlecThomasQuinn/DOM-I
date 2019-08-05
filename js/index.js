@@ -41,24 +41,34 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let nav1 = document.querySelector('nav a:nth-child(1)');
+const nav1 = document.querySelector('nav a:nth-child(1)');
 // nav1.setAttribute(textContent, siteContent["nav"]["nav-item-1"]);
 nav1.textContent =  siteContent["nav"]["nav-item-1"];
 
-let nav2 = document.querySelector('nav a:nth-child(2)');
+const nav2 = document.querySelector('nav a:nth-child(2)');
 nav2.textContent =  siteContent["nav"]["nav-item-2"];
 
-let nav3 = document.querySelector('nav a:nth-child(3)');
+const nav3 = document.querySelector('nav a:nth-child(3)');
 nav3.textContent =  siteContent["nav"]["nav-item-3"];
 
-let nav4 = document.querySelector('nav a:nth-child(4)');
+const nav4 = document.querySelector('nav a:nth-child(4)');
 nav4.textContent =  siteContent["nav"]["nav-item-4"];
 
-let nav5 = document.querySelector('nav a:nth-child(5)');
+const nav5 = document.querySelector('nav a:nth-child(5)');
 nav5.textContent =  siteContent["nav"]["nav-item-5"];
 
-let nav6 = document.querySelector('nav a:nth-child(6)');
+const nav6 = document.querySelector('nav a:nth-child(6)');
 nav6.textContent =  siteContent["nav"]["nav-item-6"];
 
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Nav Working ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+const ctaHeading = document.querySelector('.cta-text h1');
+ctaHeading.textContent = siteContent["cta"]["h1"];
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent["cta"]["button"];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CTA Working ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
